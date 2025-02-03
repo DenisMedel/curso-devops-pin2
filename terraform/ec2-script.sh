@@ -14,6 +14,6 @@ sudo touch /opt/dockerfiles/nginx/index.html
 sudo echo "Hola Curso" | sudo tee /opt/dockerfiles/nginx/index.html > /dev/null
 
 sudo docker run -d --name nginx \
-    -v /opt/dockerfiles/nginx:/usr/share/nginx/html
+    -v /opt/dockerfiles/nginx:/usr/share/nginx/html \
     -p 80:80 \
     nginx:1.27
