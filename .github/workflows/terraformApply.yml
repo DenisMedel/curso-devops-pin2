@@ -1,12 +1,6 @@
 name: Terraform Destroy and Apply
 
-on:
-  push:
-    branches:
-      - main
-    paths:
-      - 'terraform/**'
-  workflow_dispatch:
+on: [push]
 
 jobs:
   terraform_destroy_and_apply:
