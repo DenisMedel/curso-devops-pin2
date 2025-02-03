@@ -13,6 +13,7 @@ sudo systemctl start docker
 mkdir -p /opt/dockerfiles/nginx
 touch /opt/dockerfiles/nginx/index.html
 echo "Hola Curso" | sudo tee /opt/dockerfiles/nginx/index.html > /dev/null
+echo "1"
 
 sudo docker run -d --name nginx \
     -v /opt/dockerfiles/nginx:/usr/share/nginx/html
